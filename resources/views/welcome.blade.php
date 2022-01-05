@@ -24,7 +24,6 @@
     <link href="{{ asset('welcome/glightbox/css/glightbox.min.css') }}" rel="stylesheet" />
     <link href="{{ asset('welcome/swiper/swiper-bundle.min.css') }}" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <link
     <link href="{{ asset('welcome/style.css') }}" rel="stylesheet" />
 
     <!-- =======================================================
@@ -52,7 +51,7 @@
                 data-aos="fade-up"
                 data-aos-delay="200"
                 >
-                <h1>Welcome to <span>HRIS</span></h1>
+                <h1>Welcome to <span>HRIS Frontliner</span></h1>
                 <h2>
                 Human Resource Information System <br />
                 <span> PT Kereta Api Pariwisata</span>
