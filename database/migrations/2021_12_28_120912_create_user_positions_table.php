@@ -16,11 +16,11 @@ class CreateUserPositionsTable extends Migration
         Schema::create('user_positions', function (Blueprint $table) {
             $table->id();
             $table->string('nip');
-            $table->foreignId('position_id');
-            $table->boolean('approved')->default(0);
+            $table->string('position_id');
+            $table->boolean('approved')->default(false);
             $table->string('author');
-            $table->timestamps('start_date');
-            $table->timestamps('end_date');
+            $table->dateTime('start_date')->nullable();
+            $table->dateTime('end_date')->nullable();
             $table->timestamps();
         });
     }

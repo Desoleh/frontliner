@@ -21,7 +21,7 @@ class CreateUserAddressesTable extends Migration
             $table->integer('regencies');
             $table->integer('districts');
             $table->integer('villages');
-            $table->string('phone');
+            $table->string('phone')->nullable();
             $table->boolean('approved')->default(0);
             $table->timestamps();
         });

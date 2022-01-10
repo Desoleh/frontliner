@@ -16,8 +16,7 @@
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
         <!-- Scripts -->
-        <script src="{{ asset('js/app.js') }}" defer></script>
-        <script src="{{ asset('js/init-alpine.js') }}"></script>
+        @livewireStyles
 </head>
 <body>
 <div
@@ -42,7 +41,9 @@
         </main>
     </div>
 </div>
-
+    @livewireScripts
     @wireUiScripts
+        <script src="{{ asset('js/app.js') }}" defer></script>
+        <script src="{{ asset('js/init-alpine.js') }}"></script>
 </body>
 </html>

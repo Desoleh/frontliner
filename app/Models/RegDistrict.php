@@ -5,9 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class UserFamily extends Model
+class RegDistrict extends Model
 {
-    protected $guarded = [];
-
     use HasFactory;
+
+    public function candidate()
+    {
+        return $this->hasOne(Candidate::class, 'districts','id');
+    }
+
 }

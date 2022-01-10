@@ -18,6 +18,7 @@ class CreatePersonalDataTable extends Migration
             $table->string('nip')->unique();
             $table->string('name');
             $table->string('kelamin',2);
+            $table->string('status')->nullable();
             $table->string('place_of_birth');
             $table->date('birthday');
             $table->string('nik',16)->unique();

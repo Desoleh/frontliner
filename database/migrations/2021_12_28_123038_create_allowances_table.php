@@ -19,8 +19,8 @@ class CreateAllowancesTable extends Migration
             $table->foreignId('personnel_area_id');
             $table->string('name');
             $table->string('amount');
-            $table->timestamps('start_date');
-            $table->timestamps('end_date');
+            $table->dateTime('start_date')->nullable();
+            $table->dateTime('end_date')->nullable();
             $table->timestamps();
         });
     }

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateUserNpwpsTable extends Migration
+class AddNipToUsersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,8 @@ class CreateUserNpwpsTable extends Migration
      */
     public function up()
     {
-        Schema::create('user_npwps', function (Blueprint $table) {
-            $table->id();
+        Schema::table('users', function (Blueprint $table) {
             $table->string('nip');
-            $table->string('npwp')->nullable();
-            $table->timestamps();
         });
     }
 
@@ -28,6 +25,8 @@ class CreateUserNpwpsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('user_npwps');
+        Schema::table('users', function (Blueprint $table) {
+            //
+        });
     }
 }

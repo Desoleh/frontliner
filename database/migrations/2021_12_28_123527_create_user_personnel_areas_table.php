@@ -17,8 +17,8 @@ class CreateUserPersonnelAreasTable extends Migration
             $table->id();
             $table->string('nip');
             $table->foreignId('personnel_area_id');
-            $table->timestamps('start_date');
-            $table->timestamps('end_date');
+            $table->dateTime('start_date')->nullable();
+            $table->dateTime('end_date')->nullable();
             $table->timestamps();
         });
     }

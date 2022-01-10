@@ -18,8 +18,8 @@ class CreateBaseWagesTable extends Migration
             $table->string('personnel_area_id');
             $table->string('station_id');
             $table->string('amount');
-            $table->timestamps('start_date');
-            $table->timestamps('end_date');
+            $table->dateTime('start_date')->nullable();
+            $table->dateTime('end_date')->nullable();
             $table->timestamps();
         });
     }

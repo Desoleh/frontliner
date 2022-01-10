@@ -26,6 +26,8 @@ require __DIR__.'/auth.php';
 Route::middleware('auth')->group(function () {
     Route::view('about', 'about')->name('about');
 
+    Route::get('biodata',function () {return view('livewire.user.index-view');})->name('users.view');
+
     Route::get('users', [\App\Http\Controllers\UserController::class, 'index'])->name('users.index');
 
     Route::get('profile', [\App\Http\Controllers\ProfileController::class, 'show'])->name('profile.show');

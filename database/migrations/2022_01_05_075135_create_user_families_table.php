@@ -19,8 +19,9 @@ class CreateUserFamiliesTable extends Migration
             $table->string('hubungan');
             $table->string('nama');
             $table->string('nik');
-            $table->string('birthday');
-            $table->string('npwp');
+            $table->string('birthday_place');
+            $table->date('birthday');
+            $table->string('npwp')->nullable();
             $table->timestamps();
         });
     }

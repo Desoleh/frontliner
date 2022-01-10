@@ -23,8 +23,8 @@ class CreateSocialSecuritiesTable extends Migration
             $table->string('jht_p');
             $table->string('jp_p');
             $table->string('jpk_p');
-            $table->timestamps('start_date');
-            $table->timestamps('end_date');
+            $table->dateTime('start_date')->nullable();
+            $table->dateTime('end_date')->nullable();
             $table->timestamps();
         });
     }

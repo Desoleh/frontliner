@@ -19,8 +19,8 @@ class CreateAreaPositionAllowancesTable extends Migration
             $table->string('position_id');
             $table->string('allowance_id');
             $table->string('amount');
-            $table->timestamps('start_date');
-            $table->timestamps('end_date');
+            $table->dateTime('start_date')->nullable();
+            $table->dateTime('end_date')->nullable();
             $table->timestamps();
         });
     }
